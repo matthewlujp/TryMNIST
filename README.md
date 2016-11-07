@@ -36,11 +36,11 @@ See [official documnet](https://www.tensorflow.org/versions/r0.9/get_started/os_
   Try following.
   ```python
   import tensorflow as tf
-  session = tf.InteractiveSession()
 
   hello = tf.constant('hello tensorflow!')
-  print(session.run(hello))
+  print(hello.eval())
 
+  session = tf.InteractiveSession()
   a = tf.constant(10)
   b = tf.constant(20)
   print(session.run(a + b))
